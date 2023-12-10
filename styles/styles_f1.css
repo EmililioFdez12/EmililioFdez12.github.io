@@ -329,7 +329,7 @@ a {
 .vegasresult {
   display: flex;
   width: 29vw;
-  height: 56vh;
+  height: auto;
   margin: auto;
   border-radius: 5px;
 }

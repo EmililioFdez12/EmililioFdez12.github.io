@@ -320,7 +320,7 @@ a {
 
 .macao {
   display: flex;
-  width: 55vw;
+  width: auto;
   height: 50vh;
   margin: auto;
   border-radius: 5px;

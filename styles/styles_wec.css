@@ -335,7 +335,7 @@ a {
 .f499p {
   display: flex;
   width: 28vw;
-  height: 50vh;
+  height: auto;
   margin: auto;
   border-radius: 5px;
 }
