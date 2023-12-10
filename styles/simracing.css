@@ -1,0 +1,373 @@
+/*Decoracion de la página, medidas, y responsive*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(0deg, #000000, #090909 10px, #303030 1px, #111111 20px);
+}
+
+.contenedorb {
+  display: flex;
+  width: 98vw;
+  height: 97vh;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background-color: rgb(33, 33, 33);
+  margin-left: 1.5vh;
+  margin-top: 1.5vh;
+}
+
+.contenedorc {
+  display: flex;
+  width: 98vw;
+  height: 75vh;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background-color: rgb(33, 33, 33);
+  margin-left: 1.5vh;
+  margin-top: 1.5vh;
+}
+
+.card5 {
+  width: 5vw;
+  height: 10vh;
+  outline: none;
+  border: none;
+  margin-top: 7.5vh;
+  background: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 1.5vh;
+  margin-bottom: 8vh;
+  margin-left: 8vh;
+}
+
+.house {
+  width: 3vw;
+  height: 5vh;
+}
+
+.card5:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: #ca7aff;
+  box-shadow: #ad31ff 0 0 10px 0;
+  border: 2px solid whitesmoke;
+}
+
+.card5:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #999999;
+}
+
+
+.cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.8em;
+  width: 96vw;
+  height: 20vh;
+  padding: 1vh;
+  margin-top: 2vh;
+}
+
+.news3 {
+  display: flex;
+  margin: 0.8em;
+  width: 45vw;
+  height: 65vh;
+  padding: 1vh;
+  border: 0.5vh solid whitesmoke;
+  border-radius: 2vh;
+  background-color: rgb(33, 33, 33);
+  margin-top: 2vh;
+  flex-wrap: wrap;
+}
+
+.titulocabecera {
+  width: 79vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kanit', 'Sans-serif';
+  color: #ad31ff;
+  font-size: 16vh;
+  text-shadow: #ad31ff 0 0 5px;
+  position: absolute;
+  /*Para que el titulo se ponga encima del video*/
+  border-top: #ad31ff 0.5vh solid;
+  margin-left: 20vh;
+  margin-top: 2vh;
+}
+
+
+.titulobeta {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kanit', 'Sans-serif';
+  color: #ad31ff;
+  font-size: 11vh;
+  background-color: whitesmoke;
+  border-radius: 1vh 1vh 0 0;
+  border: 5px solid #ad31ff;
+}
+
+.textobeta {
+  width: 100vw;
+  height: 43vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kanit', 'Sans-serif';
+  color: #ad31ff;
+  font-size: 3.2vh;
+  background-color: whitesmoke;
+  border-radius: 0 0 1vh 1vh;
+  border: 5px solid #ad31ff;
+  padding: 2vh;
+  text-align: justify;
+  margin-top: 0.7vh;
+}
+
+.textobeta2 {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kanit', 'Sans-serif';
+  color: #ad31ff;
+  font-size: 2.4vh;
+  background-color: whitesmoke;
+  border-radius: 0 0 0 0;
+  border: 5px solid #ad31ff;
+  padding: 2vh;
+  text-align: justify;
+}
+
+.textobeta3 {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kanit', 'Sans-serif';
+  color: #ad31ff;
+  font-size: 2.4vh;
+  background-color: whitesmoke;
+  border-radius: 0 0 1vh 1vh;
+  border: 5px solid #ad31ff;
+  padding: 2vh;
+  text-align: justify;
+}
+
+.fotolicencias {
+  width: 40vw;
+  height: 20vh;
+}
+
+
+video {
+  width: 80vw;
+  height: 93vh;
+  margin-top: 2vh;
+}
+
+
+@media only screen and (max-width:768px) {
+
+
+  .contenedorb {
+    width: 90vw;
+    height: 80vh;
+    margin-top: 1.5vh;
+    margin-left: 3.5vh;
+  }
+
+  .contenedorc {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 150vh;
+    flex-wrap: nowrap;
+    border-radius: 0.5vh;
+    background-color: rgb(33, 33, 33);
+    margin-left: 3.5vh;
+    margin-top: 1.5vh;
+  }
+
+  .card5 {
+    width: 9vw;
+    height: 7vh;
+    border-radius: 0.5vh;
+    margin-top: 0vh;
+  }
+
+  .house {
+    width: 6vw;
+    height: 4vh;
+  }
+
+  .news3 {
+    display: flex;
+    margin: 0.8em;
+    width: 80vw;
+    height: 65vh;
+    margin-top: 2vh;
+  }
+
+  .titulocabecera {
+    width: 50vw;
+    height: 20vh;
+    font-size: 10vh;
+    border: none;
+    margin-left: 16vh;
+    margin-top: 2vh;
+    line-height: 9vh;
+  }
+
+
+  .titulobeta {
+    width: 100vw;
+    height: 15vh;
+    font-size: 7vh;
+
+  }
+
+  .textobeta {
+    width: 100vw;
+    height: 43vh;
+    font-size: 2.3vh;
+    text-align: justify;
+    margin-top: 0.7vh;
+  }
+
+  .textobeta2 {
+    width: 100vw;
+    height: 15vh;
+    font-size: 1.7vh;
+  }
+
+  .textobeta3 {
+    width: 100vw;
+    height: 20vh;
+    font-size: 2.4vh;
+  }
+
+  .fotolicencias {
+    width: 70vw;
+    height: 15vh;
+  }
+
+
+  video {
+    width: 90vw;
+    height: 90vh;
+    margin-top: 0vh;
+  }
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+  .contenedorb {
+    width: 90vw;
+    height: 80vh;
+    margin-top: 1.5vh;
+    margin-left: 3.5vh;
+  }
+
+  .contenedorc {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 150vh;
+    flex-wrap: nowrap;
+    border-radius: 0.5vh;
+    background-color: rgb(33, 33, 33);
+    margin-left: 3.5vh;
+    margin-top: 1.5vh;
+  }
+
+  .card5 {
+    width: 8vw;
+    height: 7vh;
+    border-radius: 0.5vh;
+    margin-top: 0vh;
+  }
+
+  .house {
+    width: 6vw;
+    height: 4vh;
+  }
+
+  .news3 {
+    display: flex;
+    margin: 0.8em;
+    width: 80vw;
+    height: 65vh;
+    margin-top: 2vh;
+    margin-left: 4vh;
+  }
+
+  .titulocabecera {
+    width: 100vw;
+    height: 20vh;
+    font-size: 10vh;
+    border: none;
+    margin-left: -6vh;
+    margin-top: -2vh;
+    line-height: 9vh;
+  }
+
+
+  .titulobeta {
+    width: 100vw;
+    height: 15vh;
+    font-size: 7vh;
+
+  }
+
+  .textobeta {
+    width: 100vw;
+    height: 43vh;
+    font-size: 2.7vh;
+    text-align: justify;
+    margin-top: 0.7vh;
+  }
+
+  .textobeta2 {
+    width: 100vw;
+    height: 15vh;
+    font-size: 2.3vh;
+  }
+
+  .textobeta3 {
+    width: 100vw;
+    height: 20vh;
+    font-size: 2.4vh;
+  }
+
+  .fotolicencias {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  video {
+    width: 90vw;
+    height: 90vh;
+    margin-top: 0vh;
+  }
+
+}

@@ -1,11 +1,16 @@
+/*Decoracion de la página, medidas, y responsive*/
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #1F222C;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(0deg, #000000, #090909 10px, #303030 1px, #111111 20px);
 }
+
 
 .contenedorb {
   display: flex;
@@ -63,28 +68,10 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
+  margin-top: 7.5vh;
 }
 
 .f1 {
-  width: 6vw;
-  height: 3vh;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
-.card2 {
-  width: 12vw;
-  height: 18vh;
-  outline: none;
-  border: none;
-  background: #fff6e6;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
-  border-radius: 5px;
-
-}
-
-.f2 {
   width: 6vw;
   height: 3vh;
   margin-top: 1em;
@@ -100,6 +87,7 @@ body {
   box-shadow: #32325d40 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
+  margin-top: 7.5vh;
 
 }
 
@@ -119,7 +107,26 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
+  margin-top: 7.5vh
+}
 
+.sim {
+  width: 7vw;
+  height: 4vh;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.card6 {
+  width: 12vw;
+  height: 18vh;
+  outline: none;
+  border: none;
+  background: #fff6e6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+  margin-top: 7.5vh;
 }
 
 .wec {
@@ -141,9 +148,9 @@ body {
   border-radius: 5px;
 }
 
-.apxrevmini {
-  width: 10vw;
-  height: 10vh;
+.house {
+  width: 7vw;
+  height: 11vh;
   margin-top: 1em;
   margin-left: 1em;
 }
@@ -153,6 +160,7 @@ body {
   scale: 1.02;
   background-color: #ff1d01;
   box-shadow: #ff1d01 0 0 10px 0;
+  border: 2px solid white;
 }
 
 .card1:active {
@@ -166,6 +174,7 @@ body {
   scale: 1.02;
   background-color: #0090d0;
   box-shadow: #0090d0 0 0 10px 0;
+  border: 2px solid white;
 }
 
 .card2:active {
@@ -179,24 +188,41 @@ body {
   scale: 1.02;
   background-color: #d00000;
   box-shadow: #d00000 0 0 10px 0;
-  
+  border: 2px solid white;
 }
 
 .card3:active {
   cursor: pointer;
   scale: 1.1;
   background-color: #d00000;
+
 }
 
 .card4:hover {
   cursor: pointer;
   scale: 1.02;
-  background-color: #0046ac;
-  box-shadow: #0046ac 0 0 10px 0;
+  background-color: #e9cb24;
+  box-shadow: #e9cb24 0 0 10px 0;
+  border: 2px solid white;
 
 }
 
 .card4:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #e9cb24;
+}
+
+.card6:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: #0046ac;
+  box-shadow: #0046ac 0 0 10px 0;
+  border: 2px solid white;
+
+}
+
+.card6:active {
   cursor: pointer;
   scale: 1.1;
   background-color: #0046ac;
@@ -205,9 +231,9 @@ body {
 .card5:hover {
   cursor: pointer;
   scale: 1.02;
-  background-color: #71c0f5;
-  box-shadow: #71c0f5 0 0 10px 0;
-
+  background-color: #0090d0;
+  box-shadow: #0090d0 0 0 10px 0;
+  border: 2px solid white;
 }
 
 .card5:active {
@@ -221,21 +247,21 @@ body {
   flex-direction: row;
   width: 97vw;
   height: 80vh;
-  margin-left:1.3em;
+  margin-left: 0.7em;
+
 }
 
 .news {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin: 0.8em;
   width: 32vw;
-  height: 72vh;
-  padding: 5px;
-  color: whitesmoke;
+  height: 70vh;
+  padding: 1vh;
   flex-direction: column;
-  border-bottom: 2px solid white;
+  border: 0.5vh solid white;
+  border-radius: 0.5vh;
+  background-color: rgb(33, 33, 33);
 }
 
 .titulonews {
@@ -243,36 +269,34 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 4px solid #5189cf;
-  border-radius: 15px;
-  box-shadow: #254770 0 0 10px 1px;
+  border-bottom: 5px solid #5189cf;
   height: 10vh;
-  width: 20vw;
-  font-size: 4vh;
-  letter-spacing: 5px;
+  width: 30vw;
+  font-size: 4.6vh;
+  letter-spacing: 2px;
+  line-height: 5vh;
   font-family: 'Kanit', 'Sans-serif';
+  font-weight: bold;
   color: #5189cf;
-  text-shadow: #0046ac 0 0 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
+  margin-top: 10px;
+  margin-left: 2vh;
 }
 
 .tituloarticulo {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-bottom: 3px solid #df0d0d;
-  border-right: 3px solid #df0d0d;
-  box-shadow: #700808 2px 2px 2px 1px;
-  border-radius: 10px;
   padding: 5px;
   height: 5vh;
-  font-size: 3.9vh;
-  width: 25vw;
-  margin-top: 10px;
+  width: 52vh;
+  font-size: 3.6vh;
   color: #ca2828;
-  text-shadow: 0 0 5px;
+  text-shadow: 0 0 3px;
   font-family: 'Kanit', 'Sans-serif';
+  margin-left: 8vh;
+  margin-bottom: -2vh;
 
 }
 
@@ -282,11 +306,11 @@ body {
   margin-top: 20px;
   font-family: 'Kanit', 'Sans-serif';
   height: 72vh;
-  width: 32vw;
-  font-size: 3.3vh;
+  width: 30vw;
+  font-size: 3.2vh;
   text-align: justify;
-  flex-direction: column;
-  color: #d1d1d1;
+  color: #ebebeb;
+  padding: 2vh;
 }
 
 a {
@@ -296,32 +320,27 @@ a {
 
 .vegaslayout {
   display: flex;
-  width: 27.5vw;
-  height: 60vh;
+  width: 29vw;
+  height: 59vh;
   margin: auto;
-  box-shadow: rgb(174, 33, 33) 0 0 20px 0;
   border-radius: 5px;
-  border:7px solid #df0d0d
 }
 
 .vegasresult {
   display: flex;
-  width: 30vw;
-  height: 55vh;
+  width: 29vw;
+  height: 56vh;
   margin: auto;
-  border: 7px solid #2159ae;
-  box-shadow: #2159ae 0 0 30px 0;
   border-radius: 5px;
 }
 
-/*Adapatado para moviles*/
+/*Adaptado para moviles*/
 @media only screen and (max-width:768px) {
 
   .contenedorb {
-    display: flex;
-    width: 97vw;
-    height: 222vh;
-    background-color: #1f222c;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg, #000000, #090909 10px, #303030 1px, #111111 20px);
   }
 
   .contenedorcabecera {
@@ -331,18 +350,27 @@ a {
   }
 
   .contenedormenu {
-    margin-top: -1.75em;
+    margin-top: -1em;
+    margin-bottom: 20vh;
     width: 97vw;
     height: 20vh;
     margin-left: 0em;
   }
 
-  .card1, .card2, .card3, .card4 {
+  .card1,
+  .card3,
+  .card4 {
     margin-right: 0em;
     width: 17vw;
     height: 16vh;
     margin-top: 15vh;
+  }
 
+  .card6 {
+    margin-right: 0em;
+    width: 17vw;
+    height: 16vh;
+    margin-top: 15vh;
   }
 
   .card5 {
@@ -358,25 +386,35 @@ a {
     margin-left: 1em;
   }
 
-  .f1,
-  .f2,
+  .f1 {
+    width: 7vw;
+    height: 3vh;
+  }
+
+
   .f3 {
     width: 8vw;
     height: 3vh;
   }
 
   .wec {
-    width: 9vw;
-    height: 3vh;
+    width: 9.5vw;
+    height: 4vh;
   }
+
+  .sim {
+    width: 8vw;
+    height: 4vh;
+  }
+
 
   .pagnews {
     display: flex;
     flex-direction: column;
     width: 97vw;
     height: 80vh;
-    margin-top:-30vh;
-    margin-left:0em;
+    margin-top: -30vh;
+    margin-left: 0em;
   }
 
   .news {
@@ -385,79 +423,86 @@ a {
     width: 93vw;
     height: 73vh;
     flex-direction: column;
-    border-bottom: 2px solid white;
+    border: 2px solid white;
     padding-bottom: 1em;
   }
 
-  .tituloarticulo {
-    font-size: 3.9vh;
-    width: 60vw;
+  .titulonews {
+    margin-left: 5em;
+    height: 10vh;
+    width: 45vw;
+    font-size: 4vh;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
   }
 
-    .titulonews {
-      margin-left: 0em;
-      height: 10vh;
-      width: 45vw;
-      font-size: 4vh;
-      letter-spacing: 5px;
-      padding-bottom: 5px;
-      margin-bottom: 0;
-    }
-   
-    .articulo {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      font-family: 'Kanit', 'Sans-serif';
-      height: 72vh;
-      width: 90vw;
-      font-size: 3.5vh;
-    }
+  .articulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Kanit', 'Sans-serif';
+    height: 72vh;
+    width: 90vw;
+    font-size: 3vh;
+    text-align: justify;
+    flex-direction: column;
+    color: #d1d1d1;
+  }
 
-    .vegaslayout {
-      width: 60vw;
-      height: 50vh;
-    }
-    
-    .vegasresult {
-      width: 80vw;
-      height: 55vh;
-    }
+  .vegaslayout {
+    width: 70vw;
+    height: 57vh;
+  }
+
+  .vegasresult {
+    width: 80vw;
+    height: 60vh;
+  }
 }
 
-/*Adaptado a tablets*/
+/*Adaptado para tablets*/
 @media only screen and (min-width:768px) and (max-width:1024px) {
+
   .contenedorb {
-    display: flex;
-    width: 97vw;
-    height: 222vh;
-    background-color: #1f222c;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg, #000000, #090909 10px, #303030 1px, #111111 20px);
   }
 
   .contenedorcabecera {
     height: 50vh;
     width: 96vw;
     margin-top: 0em;
+
   }
 
-
   .contenedormenu {
-    margin-top: -1.75em;
+    margin-top: -1em;
+    margin-bottom: 20vh;
     width: 97vw;
     height: 20vh;
     margin-left: 0em;
   }
 
-  .card1,.card3, .card4 {
+  .card1,
+  .card3,
+  .card4 {
     margin-right: 0em;
     width: 17vw;
     height: 16vh;
-    margin-top:15vh;
+    margin-top: 15vh;
+  }
 
+  .card6 {
+    margin-right: 0em;
+    width: 17vw;
+    height: 16vh;
+    margin-top: 15vh;
   }
 
   .card5 {
-    margin-top:15vh;
+    margin-top: 15vh;
     width: 17vw;
     height: 16vh;
   }
@@ -485,52 +530,46 @@ a {
     flex-direction: column;
     width: 97vw;
     height: 80vh;
-    margin-top:-30vh;
-    margin-left:0em;
+    margin-top: -30vh;
+    margin-left: 0;
   }
 
   .news {
-    border: 0;
-    margin-left: 0.5em;
     width: 93vw;
     height: 73vh;
-    flex-direction: column;
-    border-bottom: 2px solid white;
-    padding-bottom: 1em;
+    border: 2px solid white;
+
+  }
+
+  .titulonews {
+    height: 10vh;
+    width: 45vw;
+    font-size: 4vh;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2vh;
   }
 
   .tituloarticulo {
-    font-size: 3.9vh;
-    width: 60vw;
+    margin: 0;
   }
 
-    .titulonews {
-      margin-left: 0em;
-      height: 10vh;
-      width: 45vw;
-      font-size: 4vh;
-      letter-spacing: 5px;
-      padding-bottom: 5px;
-      margin-bottom: 0;
-    }
-   
-    .articulo {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      font-family: 'Kanit', 'Sans-serif';
-      height: 72vh;
-      width: 90vw;
-      font-size: 3.9vh;
-    }
+  .articulo {
+    display: flex;
+    height: 72vh;
+    width: 90vw;
+    font-size: 3.5vh;
+    text-align: justify;
+    color: #d1d1d1;
+  }
 
-    .vegaslayout {
-      width: 45vw;
-      height: 50vh;
-    }
-    
-    .vegasresult {
-      width: 60vw;
-      height: 55vh;
-    }
+  .vegaslayout {
+    width: 65vw;
+    height: 58vh;
+  }
+
+  .vegasresult {
+    width: 75vw;
+    height: 60vh;
+  }
 }
